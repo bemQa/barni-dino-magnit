@@ -1526,13 +1526,13 @@ span.error {
 .winners-wrapper::after {
     content: '';
     position: absolute;
-    top: -124px;
+    top: -60px;
     left: 0;
     right: 0;
     margin: auto;
-    width: 230px;
-    height: 207px;
-    background: url(../img/winners-vr.png) center no-repeat;
+    width: 170px;
+    height: 90px;
+    background: url(../img/winners-projector.png) center no-repeat;
     background-size: contain;
     z-index: 1;
 }
@@ -3069,7 +3069,7 @@ a.my-dino-ar-title {
 }
 
 .winners-table {
-    max-width: 580px;
+    max-width: 680px;
     height: auto;
     max-height: 400px;
 }
@@ -3104,7 +3104,7 @@ a.my-dino-ar-title {
     border-bottom-left-radius: 30px;
 }
 
-.winners-table tr:hover td:last-child {
+.winners-table tr:hover td:nth-child(5) {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -3113,7 +3113,18 @@ a.my-dino-ar-title {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 230px;
+    max-width: 140px;
+}
+
+.prize-td {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.winners-prize {
+    width: 30px;
+    margin-right: 10px;
 }
 
 .lk-announce {
@@ -3195,6 +3206,7 @@ a.my-dino-ar-title {
 }
 
 .lk-table td {
+    font-size: 16px;
     line-height: 1.2;
     color: #572A13;
 }
@@ -3211,6 +3223,33 @@ a.my-dino-ar-title {
     min-width: 150px;
 }
 
+.lk-table .td-separate {
+    position: relative;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    color: #2FBBE5;
+}
+
+.td-separate::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed #2FBBE5;
+}
+
+.lk-table .td-separate span {
+    position: relative;
+    padding: 0 10px;
+    background: #fff;
+}
+
 .check-preview {
     width: 42px;
     height: 42px;
@@ -3218,6 +3257,10 @@ a.my-dino-ar-title {
     overflow: hidden;
     border-radius: 50px;
     border: 2px solid transparent;
+}
+
+.wait {
+    color: #D0D0D0;
 }
 
 .rejected .check-preview {
@@ -3245,21 +3288,18 @@ a.my-dino-ar-title {
 
 .get-prize {
     position: relative;
-    display: inline-block;
-    width: 100px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
 }
 
-.get-prize img {
-    position: absolute;
-    top: 0;
-    left: -20px;
-    bottom: 0;
-    margin: auto;
-    width: 90px;
-    height: 81px;
+.get-prize span {
+    color: #2FBBE5;
 }
 
-.get-prize::after {
+/*.get-prize::after {
     content: '';
     position: absolute;
     top: 0;
@@ -3270,19 +3310,69 @@ a.my-dino-ar-title {
     margin: auto;
     background: url(../img/why-blue.svg) center no-repeat;
     background-size: contain;
-}
+}*/
 
 .lk-table-wrapper .tooltip {
-    top: 150px;
+    top: 100px;
     left: 0;
-    right: -400px;
+    right: -670px;
     margin: auto;
-    height: 260px;
-    padding: 15px 15px 5px;
+    height: 334px;
+    padding: 30px;
+}
+
+.lk-table-wrapper .tooltip .tooltip-qr-title {
+    color: #CE030A;
+}
+
+.lk-table-wrapper .tooltip .tooltip-qr-text {
+    font-weight: normal;
 }
 
 .tooltip-qr-text a {
     color: #2FBBE5;
+}
+
+.tooltip-qr-img {
+    width: 42px;
+    margin: 0 auto 10px;
+}
+
+.input-drop {
+    display: flex;
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+.input-drop .input-field {
+    margin: auto;
+}
+
+.input-drop .input-field:last-child {
+    margin-left: 10px;
+}
+
+.popup .select2-container .select2-selection--single {
+    height: 48px;
+    padding: 16px 30px 16px 20px;
+}
+
+.popup .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    font-size: 14px;
+}
+
+.popup .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 14px;
+}
+
+.popup .select2-results__option {
+    font-size: 14px;
+}
+
+.popup__text.delivery-address {
+    font-size: 16px;
+    text-align: left;
+    color: #2EC5F4;
 }
 
 .vr-steps-block {
@@ -3843,7 +3933,7 @@ a.my-dino-ar-title {
     }
 
     .winners-wrapper {
-        padding: 80px 0 50px;
+        padding: 50px 0 50px;
     }
 
     .winners-wrapper::before {
@@ -3854,10 +3944,6 @@ a.my-dino-ar-title {
         height: 100%;
         background: url(../img/products-bg-mob.png) center 0 no-repeat;
         background-size: 100% 3089px;
-    }
-
-    .winners-wrapper::after {
-        top: -100px;
     }
 
     .winner {
@@ -3890,6 +3976,10 @@ a.my-dino-ar-title {
         min-width: 150px;
     }
 
+    table .mobile-visible {
+        display: table-cell;
+    }
+
     table td:last-child {
         min-width: 100px;
     }
@@ -3897,6 +3987,10 @@ a.my-dino-ar-title {
     table th:last-child,
     table td:last-child {
         text-align: center;
+    }
+
+    table .mobile-visible.prize-td {
+        display: flex;
     }
 
     .profile-name {
@@ -4211,8 +4305,12 @@ a.my-dino-ar-title {
 
     .winners-name {
         white-space: normal;
-        max-width: 180px;
-        margin-bottom: 10px;
+        max-width: 140px;
+        margin-bottom: 8px;
+    }
+
+    .winners-prize-title {
+        margin-bottom: 8px;
     }
 
     .lk-table-wrapper {
@@ -4227,6 +4325,8 @@ a.my-dino-ar-title {
         right: -100px;
         width: 390px;
         height: 486px;
+        background: url(../img/lk-table-bg-mob.png) center 0 no-repeat;
+        background-size: 100% 100%;
     }
 
     .lk-table {
@@ -4244,7 +4344,7 @@ a.my-dino-ar-title {
     }
 
     .lk-table td:nth-child(3) {
-        min-width: 100px;
+        min-width: 90px;
     }
 
     .lk-table td:nth-child(4) {
@@ -4256,23 +4356,18 @@ a.my-dino-ar-title {
         text-align: left;
     }
 
+    .lk-table .td-separate {
+        text-align: center !important;
+    }
+
     .check-preview {
         margin-bottom: 5px;
     }
 
     .get-prize {
+        display: table-cell;
         width: 80px;
         height: auto;
-    }
-
-    .get-prize img {
-        top: -40px;
-        width: 75px;
-        height: 68px;
-    }
-
-    .get-prize::after {
-        top: -40px;
     }
 
     .vr-steps-block {
@@ -4368,10 +4463,6 @@ a.my-dino-ar-title {
         padding: 40px 0 30px;
     }
 
-    .lk-table td:nth-child(3) {
-        min-width: 90px;
-    }
-
     .vr-steps-title {
         font-size: 40px;
         line-height: 50px;
@@ -4432,5 +4523,17 @@ a.my-dino-ar-title {
     .iframe-wrap,
     .iframe-wrap iframe {
         min-height: 340px;
+    }
+
+    table td.mobile-visible {
+        min-width: 140px;
+    }
+
+    .winners-table td {
+        font-size: 14px;
+    }
+
+    .winners-name {
+        max-width: 120px;
     }
 }
