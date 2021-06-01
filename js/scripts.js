@@ -228,4 +228,77 @@ $(document).ready(function () {
             }
         });
     }
+
+    if($(window).innerWidth() > 1000) {
+        var star1 = document.querySelector('.star1'),
+            star2 = document.querySelector('.star2'),
+            star3 = document.querySelector('.star3'),
+            star4 = document.querySelector('.star4'),
+            star5 = document.querySelector('.star5'),
+            star6 = document.querySelector('.star6'),
+            star7 = document.querySelector('.star7'),
+            star8 = document.querySelector('.star8'),
+            star9 = document.querySelector('.star9'),
+            star10 = document.querySelector('.star10');
+
+        new simpleParallax(star1, {
+            orientation: 'up left',
+            scale: 2.2,
+            overflow: true
+        });
+
+        new simpleParallax(star2, {
+            orientation: 'up right',
+            scale: 2.1,
+            overflow: true
+        });
+
+        new simpleParallax(star3, {
+            orientation: 'left',
+            scale: 1.8,
+            overflow: true
+        });
+
+        new simpleParallax(star4, {
+            orientation: 'down left',
+            scale: 2.2,
+            overflow: true
+        });
+
+        new simpleParallax(star5, {
+            orientation: 'down left',
+            scale: 2.3,
+            overflow: true
+        });
+
+        new simpleParallax(star6, {
+            orientation: 'up right',
+            scale: 2.3,
+            overflow: true
+        });
+
+        new simpleParallax(star7, {
+            orientation: 'up right',
+            scale: 1.7,
+            overflow: true
+        });
+
+        new simpleParallax(star8, {
+            orientation: 'up right',
+            scale: 2,
+            overflow: true
+        });
+
+        new simpleParallax(star9, {
+            orientation: 'down right',
+            scale: 2.3,
+            overflow: true
+        });
+
+        new simpleParallax(star10, {
+            orientation: 'down right',
+            scale: 2.1,
+            overflow: true
+        });
+    }
 });
