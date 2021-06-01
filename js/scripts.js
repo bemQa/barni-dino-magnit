@@ -218,4 +218,14 @@ $(document).ready(function () {
         });
     }
     closeTooltip();
+
+    if($('.constructor-animation').length) {
+        $(window).on('scroll load', function () {
+            var top = $(window).scrollTop();
+            var destination =  $('.magnit-steps-block').offset().top-250;
+            if(top >= destination) {
+                 $('.constructor-animation').addClass('active'); 
+            }
+        });
+    }
 });

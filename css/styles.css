@@ -3375,14 +3375,14 @@ a.my-dino-ar-title {
     color: #2EC5F4;
 }
 
-.vr-steps-block {
+.magnit-steps-block {
     position: relative;
     min-height: 560px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     padding-top: 230px;
 }
 
-.vr-steps-block::before {
+.magnit-steps-block::before {
     content: '';
     position: absolute;
     top: 0;
@@ -3391,62 +3391,64 @@ a.my-dino-ar-title {
     margin: auto;
     width: 2824px;
     height: 1130px;
-    background: #14592D;
+    background: #CE030A;
     border-radius: 50%;
 }
 
 .paws-main-left {
     position: absolute;
-    top: 260px;
-    left: -1250px;
+    top: 0;
+    left: -730px;
     right: 0;
     margin: auto;
-    width: 644px;
-    height: 554px;
-    background: url(../img/paws-main-left.png) center no-repeat;
+    width: 1174px;
+    height: 1122px;
+    background: url(../img/red-leaf-left.png) center no-repeat;
     background-size: contain;
 }
 
 .paws-main-right {
     position: absolute;
-    top: 240px;
+    top: 50px;
     left: 0;
-    right: -1300px;
+    right: -800px;
     margin: auto;
-    width: 494px;
-    height: 649px;
-    background: url(../img/paws-main-right.png) center no-repeat;
+    width: 1104px;
+    height: 687px;
+    background: url(../img/red-leaf-right.png) center no-repeat;
     background-size: contain;
 }
 
-.vr-steps-block .container {
-    max-width: 1230px;
-}
-
-.vr-steps-title {
+.magnit-steps-title {
     font-family: 'Tobi';
     font-weight: 900;
-    font-size: 70px;
-    line-height: 84px;
+    font-size: 60px;
+    line-height: 72px;
     text-align: center;
     text-transform: uppercase;
-    color: #F0F835;
+    color: #fff;
 }
 
-.vr-steps {
+.magnit-steps-title img {
+    margin-bottom: -10px;
+}
+
+.magnit-steps {
     display: flex;
     justify-content: space-between;
-    max-width: 630px;
+    max-width: 740px;
     width: 100%;
-    margin: 0 auto 50px;
+    margin: 30px auto;
 }
 
-.vr-step {
+.magnit-step {
     position: relative;
-    padding-top: 250px;
+    max-width: 280px;
+    width: 100%;
+    padding-top: 200px;
 }
 
-.vr-step-img {
+.magnit-step-img {
     position: absolute;
     top: 0;
     left: -100px;
@@ -3455,17 +3457,32 @@ a.my-dino-ar-title {
     margin: auto;
 }
 
-.vr-step.step1 .vr-step-img {
-    top: -30px;
-    width: 432px;
+.magnit-step.step1 .magnit-step-img {
+    top: 10px;
+    width: 268px;
 }
 
-.vr-step.step2 .vr-step-img {
-    top: -40px;
-    width: 394px;
+.magnit-step.step2 .magnit-step-img {
+    top: 10px;
+    width: 220px;
 }
 
-.vr-step-num {
+.constructor-animation {
+    position: absolute;
+    top: -50px;
+    right: -250px;
+    width: 269px;
+    transition: all .4s ease;
+    opacity: 0;
+}
+
+.constructor-animation.active {
+    top: -20px;
+    right: -150px;
+    opacity: 1;
+}
+
+.magnit-step-num {
     position: absolute;
     top: 45px;
     left: 0;
@@ -3473,28 +3490,39 @@ a.my-dino-ar-title {
     height: 58px;
 }
 
-.vr-step.step1 .vr-step-num {
-    background: url(../img/vr-step-num1.svg) center no-repeat;
+.magnit-step.step1 .magnit-step-num {
+    background: url(../img/magnit-step-num1.svg) center no-repeat;
     background-size: contain;
 }
 
-.vr-step.step2 .vr-step-num {
-    background: url(../img/vr-step-num2.svg) center no-repeat;
+.magnit-step.step2 .magnit-step-num {
+    background: url(../img/magnit-step-num2.svg) center no-repeat;
     background-size: contain;
 }
 
-.vr-step-title {
+.magnit-step-title {
     position: relative;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F7E732;
+    margin-bottom: 10px;
+}
+
+.magnit-step-text {
     font-weight: bold;
     font-size: 24px;
     line-height: 1.2;
     text-align: center;
-    text-transform: uppercase;
     color: #FFFFFF;
 }
 
-.vr-step-title span {
-    color: #7AC916;
+.magnit-step-text span {
+    font-weight: normal;
+    font-size: 21px;
+    color: #F7E732;
 }
 
 .steps-block {
@@ -4370,28 +4398,42 @@ a.my-dino-ar-title {
         height: auto;
     }
 
-    .vr-steps-block {
-        padding-top: 310px;
+    .magnit-steps-block {
+        padding-top: 330px;
     }
 
-    .vr-steps-block::before {
+    .magnit-steps-block::before {
         height: 1400px;
     }
 
-    .vr-steps-title {
-        font-size: 46px;
-        line-height: 55px;
+    .magnit-steps-title {
+        font-size: 40px;
+        line-height: 48px;
     }
 
-    .vr-steps {
+    .magnit-steps-title img {
+        width: 224px;
+        margin: 0;
+    }
+
+    .magnit-steps {
         flex-direction: column;
         -ms-align-items: center;
         align-items: center;
         justify-content: center;
+        margin: 10px auto 50px;
     }
 
-    .vr-step-num {
-        left: -150px;
+    .magnit-step.step1 {
+        margin-bottom: 40px;
+    }
+
+    .constructor-animation.active {
+        right: -120px;
+    }
+
+    .magnit-step-num {
+        left: -220px;
         right: 0;
         margin: auto;
     }
@@ -4463,7 +4505,7 @@ a.my-dino-ar-title {
         padding: 40px 0 30px;
     }
 
-    .vr-steps-title {
+    .magnit-steps-title {
         font-size: 40px;
         line-height: 50px;
     }
