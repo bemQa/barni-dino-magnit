@@ -4235,12 +4235,12 @@ a.my-dino-ar-title {
 
     .kv {
         top: -30px;
-        left: -300px;
+        left: -350px;
         right: -300px;
-        width: 675px;
+        width: 610px;
         height: 731px;
         background: url(../img/kv-mob.png) center 0 no-repeat;
-        background-size: 675px;
+        background-size: 610px;
     }
 
     .how-to-block {
