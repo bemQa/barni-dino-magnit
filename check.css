@@ -317,6 +317,7 @@ zxing-scanner {
     height: 200px !important;
     margin: 0 auto 20px !important;
     border-radius: 30px;
+    overflow: hidden;
 }
 
 app-root button {
